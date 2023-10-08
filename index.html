@@ -4,37 +4,51 @@
  <style>
   table{
    display: block;
-   width: 50%;
+   width: auto;
    text-align: center; 
    font-weight: 5px;
    background-color: rgba(255, 255, 255, 0.829);
 }
 
+button.add{
+  display:block;
+  background:yellowgreen;
+  color:black;
+  width:60px;
+  height:20px;
+  font-weight: 10px;
+}
 button{
   background:yellowgreen;
   font-weight: 10px;
+  color:white;
+  border-radius: 3px;
 }
+
 div{
-border-bottom: 1px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 5px;
 }
-button1{
-  background-color: lightblue;
-  
-}
+
 th{
   width:auto;
-  border-style: double;
+  border: double 2px black;
+  font-weight:1px;
 }
-tr{
+td{
+ padding: 10px;
   width:auto;
-  border-style: double;
+  border-bottom: solid 1px green;
+  border-top: solid 1px green;
 }
+
  </style>
   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
     <h1 class="h2">친구 관리 리스트</h1>
     <div class="btn-toolbar mb-2 mb-md-0">
       <div class="btn-group me-2">
-        <button1 type="button" class="btn btn-sm btn-outline-secondary">추가</button1>
+        <button type="button" class="add">추가</button>
         <!-- <button type="button" class="btn btn-sm btn-outline-secondary">삭제</button> -->
       </div>
       
@@ -50,7 +64,7 @@ tr{
               <th scope="col">전화번호</th>
               <th scope="col">RC</th>
               <th scope="col">이메일</th>
-              <th scope="col">수정 및 삭제</th>
+              <th scope="col">Menu</th>
             </tr>
           </thead>
           <tbody>
