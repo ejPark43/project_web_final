@@ -1,275 +1,5 @@
-
- .snackbar {
-      display: block;
-      background: yellowgreen;
-      border-radius: 1px;
-      height: 50px;
-      border-bottom: solid 2px gray;
-
-    }
-
-    h3.h2 {
-      text-align: left;
-      margin-left: 10px;
-      font-weight: 2pt;
-      color: white;
-      float: left;
-
-    }
-
-    .topnav {
-      overflow: hidden;
-      display: block;
-      border-radius: 0px;
-      background-color: #333;
-    }
-
-    /* Style the topnav links */
-    .topnav a {
-      float: right;
-      display: block;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 18px;
-      text-decoration: none;
-    }
-
-    .topnav h3 {
-      color: white;
-      display: block;
-      border-top: solid 2px white;
-      border-bottom: solid 2px white;
-      padding: 5px;
-    }
-
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-
-
-
-    a:link,
-    a:visited {
-      color: white;
-      padding: 25px;
-      text-align: center;
-      text-decoration: none;
-
-    }
-
-    a:hover,
-    a:active {
-      background-color: green;
-    }
-
-
-    .addbuttonhead {
-      margin: auto;
-      width: 688px;
-      height: 50px;
-      background: white;
-      border-radius: 0px;
-      margin-top: 10px;
-      border-bottom: solid 2px green;
-      border-top: solid 2px green;
-    }
-
-    .list {
-	float: left;
-      color: black;
-
-      margin: auto;
-      padding: 5px;
-      font-size: 30px;
-      background: white;
-      border-top: solid 2px green;
-      border-bottom: solid 2px green;
-      width: 200px;
-
-    }
-
-    .add {
-    float:right;
-     margin: auto;
-      background:  yellowgreen;
-      color: white;
-      border-radius: 10px;
-	width: 60px;
-    height: 40px;
-    
-      border-bottom: solid 2px gray;
-    }
-	.add:hover{
- background: rgb(138, 182, 49);;
-    }
-    button {
-      background: yellowgreen;
-      font-weight: 10px;
-      color: white;
-      border-radius: 3px;
-    }
-.view{
-background: white;
-color: black;
-}
-.view:hover{
-background: yellowgreen;
-color: black;
-}
-    div {
-      border-radius: 5px;
-      background-color: #f2f2f2;
-      padding: 5px;
-    }
-
-    .div1 {
-      border-radius: 0px;
-      background: white;
-      background-color: white;
-      border-bottom: solid 1px lightgray;
-    }
-
-
-
-    .heading {
-      background-color: white;
-    }
-
-    table {
-      display: block;
-      margin: auto;
-      width: 695px;
-      border-radius: 3px;
-      background-color: white;
-
-    }
-    
-     table {
-      display: block;
-      margin: auto;
-      width: 695px;
  
-      text-align: center;
-      font-weight: 5px;
-      background-color: rgba(255, 255, 255, 0.829);
-     							 background: white;
-    }
-
-    th,
-    tr {
-    background: white;
-  
-      width: 5%;
-      border: double 2px green;
-      font-weight: 1px;
-      border-radius: 3px;
-
-    }
-
-    td {
-      padding: 10px;
-      width: auto;
-      border-bottom: solid 1px green;
-      border-top: solid 1px green;
-    }
-
-@media screen and (max-width:600px)
-{
-  .topnav h3 {
-      color: white;
-      display: block;
-      font-size:10pt;
-      border-top: solid 1px white;
-      border-bottom: solid 1px white;
-      padding: 3px;
-    }
- .topnav a {
-      float: right;
-      display: block;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 18px;
-      text-decoration: none;
-    }
-table{
-font-size: 10px;
-
-}
-
- th,tr {
-    	
-      margin: auto;
-      width: 5%;
-      border: double 2px green;
-      font-weight: 1px;
-      font-size: 10px;
-      border-radius: 3px;
-
-    }
-
-    td {
-      padding: 5px;
-      width: 3%;
- 	font-size: 10px;
- 
-    }
-.list {
-      color: black;
-  		margin: auto;
-    padding:5px;
-      text-align: center;
-      font-size: 15px;
-      background: white;
-      width: auto;
-
-    }
-     .add {
-    float:right;
-     margin-top: 5px;
-      background:  yellowgreen;
-      color: white;
-      border-radius: 10px;
-      font-size: 10pt;
-      
-	width: 40px;
-    height: 20px;
-    
-      border-bottom: solid 2px gray;
-    }
-	.add:hover{
- background: rgb(138, 182, 49);;
-    }
-      .addbuttonhead {
-      margin: auto;
-      width: 80%;
-      height: 30px;
-      background: white;
-      border-radius: 0px;
-      margin-top: 10px;
-      border-bottom: solid 2px green;
-      border-top: solid 2px green;
-    }
-    
-      button {
-      background: yellowgreen;
-      font-weight: 10px;
-      font-size: 5pt;
-      color: white;
-      border-radius: 3px;
-      margin-bottom:2px;
-      
-    }
-   }
-
-
-    
-
-
-
-
-   
-   .snackbar {
+    .snackbar {
       display: block;
       background: yellowgreen;
       border-radius: 1px;
@@ -366,7 +96,7 @@ font-size: 10px;
 
  .add {
     float:right;
-     margin: auto;
+     margin-top: 5px;
       background:  yellowgreen;
       color: white;
       border-radius: 10px;
@@ -437,7 +167,7 @@ font-size: 10px;
     
     
     
-  @media screen and (max-width:550px)
+  @media screen and (max-width:600px)
 {
   .topnav h3 {
       color: white;
@@ -489,12 +219,13 @@ font-size: 10px;
     }
      .add {
     float:right;
-     margin: auto;
+     margin-top: 5px;
       background:  yellowgreen;
       color: white;
       border-radius: 10px;
-      font-size:  10px;
-	width: 30px;
+      font-size: 10pt;
+      
+	width: 40px;
     height: 20px;
     
       border-bottom: solid 2px gray;
@@ -523,4 +254,4 @@ font-size: 10px;
       
     }
     
-}
+}  
