@@ -1,14 +1,14 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <body>
  
 <h2>데이터 추가</h2>
 
-<form action="action_page.html">
+<form name = "addhtml" form action="action_page.html" onsubmit="return validateForm()" method="post">
   <label for="fname"><span>*</span>이름: </label><br>
-  <input type="text" id="fname" name="uname" placeholder="이름 입력" required><br>
+  <input type="text" id="fname" name="uname" placeholder="이름 입력"><br>
   <label for="text"><span>*</span>생일: </label><br>
-  <input type="text" id="birthday" name="birthday" placeholder='mm/dd' pattern="[1-12]{1,2}/[1-31]{1,2}" maxlength="5" required><br>
+  <input type="text" id="birthday" name="birthday" placeholder='mm/dd' pattern="[1-12]{1,2}/[1-31]{1,2}" maxlength="5"><br>
   <labe for="mobile">전화번호: </label><br>
   <input type="text" id="mobile" name="mobile" placeholder="00*-000*-0000" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{3,4}" maxlength="13"><br>
  
@@ -26,62 +26,53 @@
   <input type="email" id="email" name="email"><br>
 
 관계: <br>
-  <input type="radio" id="classfriend" name="relationship" value="ClassFriend">
-  <label for="classfriend">수업친구</label>
   <input type="radio" id="friend" name="relationship" value="friend">
-  <label for="friend">지인</label>
+  <label for="friend">친구</label>
+  <input type="radio" id="freshmanfriend"name="relationship" value="FreshmanFriend">
+  <label for="freshmanfriend">동기새내기</label>
+  <input type="radio" id="classfriend" name="relationship" value="ClassFriend">
+  <label for="classfriend">같은 수업</label>
+ <input type="radio" id="teamfriend" name="relationship" value="TeamFriend">
+  <label for="teamfriend">팀사람</label>
   <input type="radio" id="clubfriend" name="relationship" value="clubFriend">
-  <label for="clubfriend">동아리</label>
+  <label for="clubfriend">동아리사람</label>
   <input type="radio" id="etc" name="relationship" value="Etc">
   <label for="javascript">기타</label>
 <br>
-비고:<br>
+메모:<br>
 <textarea name='content' cols=40 rows=5></textarea><br>
 
 <button onclick="myFunction()">추가</button>
 
 <script>
-function myFunction() {
+
+   function validateForm(){
+    
+      var uname = document.addhtml.uname;
+      if(uname.value==""){
+        alert("이름을 입력하세요");
+        uname.focus();
+        return false;
+      }
+      if(uname.value.length<2){
+        alert("이름은 2글자 이상 입력하세요");
+        uname.focus();
+        return false;
+      }
+        var birthday = document.addhtml.birthday;
+      if(birthday.value == ""){ // 생일 안썼을 때 
+        alert("생일을 입력하세요");
+        birthday.focus();
+        return false;
+      }
+
+    }
+    
+    function myFunction() {
   alert("게시물이 추가됩니다.");
 }
 </script>
 
 </form> 
-</body>
-</html> -->
-
-<html>
-<body>
-<form name="form1" action="add_actionpage.php" onsubmit="return validateForm()" method="post">
-
-  제목: <input type="text" name="subject"><br>
-  이름: <input type="text" name="writer"><br>
-  내용: <textarea name="content" cols="20" rows="5"></textarea><br>
-  <input type="submit" value="저장">
-  </form>
-  
-  <script>
-    function validateForm(){
-      var subject = document.forml.subject;
-      if(subject.value == ""){ // 제목 안썼을 때 
-        alert("제목을 입력하세요");
-        subject.focus();
-        return false;
-      }
-      var writer = document.forml.writer;
-      if(writer==""){
-        alert("이름을 입력하세요");
-        writer.focus();
-        return false;
-      }
-      if(writer.length<2){
-        alert("이름은 2글자 이상 입력하세요");
-        writer.focus;
-        return false;
-      }
-
-    }
-  </script>
-
 </body>
 </html>
