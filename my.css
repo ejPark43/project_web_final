@@ -1,4 +1,7 @@
- 
+h2{
+   text-align: left;
+   border-bottom: solid 2px green;
+   }
     .snackbar {
       display: block;
       background: yellowgreen;

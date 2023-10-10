@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html>
+  <link rel="stylesheet" href='my.css'>
 <body>
- 
+
+  <div class="snackbar"></div>
+  <div class="div1">
+
+    <div class="topnav">
+      <h3 class="h2">나의 친구 관리 리스트</h3>
+      <a href="#">Home</a>
+      <a href="#">How to use</a>
+      <a href="#">About</a>
+    </div>
+
+  </div>
 <h2>데이터 수정</h2>
 
 <form name = "edithtml" form action="https://22200310web2.netlify.app/action_page.html" onsubmit="return validateForm()" method="post">
@@ -69,7 +81,7 @@
 
         return false;
       }
-      
+
       var phoneNum = document.edithtml.mobile;
       if(mobile.value == ""){ // 번호 안썼을 때 
         alert("전화번호를 입력하세요");
