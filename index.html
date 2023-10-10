@@ -11,13 +11,7 @@
 
     }
 
-    table {
-      display: block;
-      width: auto;
-      text-align: center;
-      font-weight: 5px;
-      background-color: rgba(255, 255, 255, 0.829);
-    }
+   
 
     h3.h2 {
       text-align: left;
@@ -98,7 +92,7 @@
     }
 
     .add {
-      background: white;
+      background:  yellowgreen;
       color: white;
       border-radius: 10px;
 
@@ -106,15 +100,20 @@
       border-bottom: solid 2px gray;
     }
 
-
-
     button {
       background: yellowgreen;
       font-weight: 10px;
       color: white;
       border-radius: 3px;
     }
-
+.view{
+background: white;
+color: black;
+}
+.view:hover{
+background: yellowgreen;
+color: black;
+}
     div {
       border-radius: 5px;
       background-color: #f2f2f2;
@@ -142,11 +141,23 @@
       background-color: white;
 
     }
+    
+     table {
+      display: block;
+      margin: auto;
+      width: 695px;
+ 
+      text-align: center;
+      font-weight: 5px;
+      background-color: rgba(255, 255, 255, 0.829);
+     							 background: white;
+    }
 
     th,
     tr {
-      margin: auto;
-      width: auto;
+    background: white;
+  
+      width: 5%;
       border: double 2px green;
       font-weight: 1px;
       border-radius: 3px;
@@ -156,7 +167,6 @@
     td {
       padding: 10px;
       width: auto;
-
       border-bottom: solid 1px green;
       border-top: solid 1px green;
     }
@@ -175,12 +185,9 @@
 
   <div class="addbuttonhead">
     <h8 class="list">목록</h8>
-
     <a href="https://22200310web2.netlify.app/add" class="a add" target="_blank">Add</a>
 
   </div>
-
-
 
   <div class="heading">
     <table class="table">
@@ -191,8 +198,10 @@
           <th scope="col">생일</th>
           <th scope="col">전화번호</th>
           <th scope="col">RC</th>
+          <th scope="col">view</th>
+          <!--
           <th scope="col">이메일</th>
-          <th scope="col">Menu</th>
+          <th scope="col">Menu</th> -->
         </tr>
       </thead>
       <tbody>
@@ -202,9 +211,11 @@
           <td>12/31</td>
           <td>010-1234-1234</td>
           <td>토레이</td>
+           <td><button type="button" class="button view" onclick="location.href='https://22200310web2.netlify.app/view.html' ">더보기</button></td>
+          <!--
           <td>Cheol1231@handong.ac.kr</td>
           <td><button type="button" class="btn btn-sm btn-outline-secondary">edit</button><button type="button"
-              class="btn btn-sm btn-outline-secondary">delete</button></td>
+              class="btn btn-sm btn-outline-secondary">delete</button></td> -->
         </tr>
         <tr>
           <td>2</td>
@@ -212,9 +223,11 @@
           <td>8/5</td>
           <td>010-1111-2222</td>
           <td>손양원</td>
+ <td><button type="button" class="button view" onclick="location.href='https://22200310web2.netlify.app/view.html' ">더보기</button></td>
+          <!-- 
           <td>yebinkim85@handong.ac.kr</td>
           <td><button type="button" class="btn btn-sm btn-outline-secondary">edit</button><button type="button"
-              class="btn btn-sm btn-outline-secondary">delete</button></td>
+              class="btn btn-sm btn-outline-secondary">delete</button></td> -->
 
         </tr>
         <tr>
@@ -223,9 +236,11 @@
           <td>11/5</td>
           <td>010-1212-3434</td>
           <td>장기려</td>
+           <td><button type="button" class="button view" onclick="location.href='https://22200310web2.netlify.app/view.html' ">더보기</button></td>
+          <!-- 
           <td>115glass@handong.ac.kr</td>
           <td><button type="button" class="btn btn-sm btn-outline-secondary">edit</button><button type="button"
-              class="btn btn-sm btn-outline-secondary">delete</button></td>
+              class="btn btn-sm btn-outline-secondary">delete</button></td> -->
 
         </tr>
         <tr>
@@ -234,9 +249,11 @@
           <td>3/12</td>
           <td>010-1231-4567</td>
           <td>장기려</td>
+           <td><button type="button" class="button view" onclick="location.href='https://22200310web2.netlify.app/view.html' ">더보기</button></td>
+          <!--
           <td>hannah123@handong.ac.kr</td>
           <td><button type="button" class="btn btn-sm btn-outline-secondary">edit</button><button type="button"
-              class="btn btn-sm btn-outline-secondary">delete</button></td>
+              class="btn btn-sm btn-outline-secondary">delete</button></td> -->
 
         </tr>
         <tr>
@@ -245,9 +262,11 @@
           <td>6/28</td>
           <td>010-5678-1234</td>
           <td>카마이클</td>
+           <td><button type="button" class="button view" onclick="location.href='https://22200310web2.netlify.app/view.html' ">더보기</button></td>
+          <!--
           <td>leah628@handong.ac.kr</td>
           <td><button type="button" class="btn btn-sm btn-outline-secondary">edit</button><button type="button"
-              class="btn btn-sm btn-outline-secondary">delete</button></td>
+              class="btn btn-sm btn-outline-secondary">delete</button></td> -->
 
         </tr>
         <tr>
@@ -256,9 +275,11 @@
           <td>8/19</td>
           <td>010-1111-9999</td>
           <td>열송학사</td>
+           <td><button type="button" class="button view" onclick="location.href='https://22200310web2.netlify.app/view.html' ">더보기</button></td>
+          <!-- 
           <td>hyunKim1111@handong.ac.kr</td>
           <td><button type="button" class="btn btn-sm btn-outline-secondary">edit</button><button type="button"
-              class="btn btn-sm btn-outline-secondary">delete</button></td>
+              class="btn btn-sm btn-outline-secondary">delete</button></td> -->
         </tr>
         <tr>
           <td>7</td>
@@ -266,9 +287,11 @@
           <td>7/9</td>
           <td>010-2222-3333</td>
           <td>손양원</td>
+           <td><button type="button" class="button view" onclick="location.href='https://22200310web2.netlify.app/view.html' ">더보기</button></td>
+          <!-- 
           <td>Gia7979@handong.ac.kr</td>
           <td><button type="button" class="btn btn-sm btn-outline-secondary">edit</button><button type="button"
-              class="btn btn-sm btn-outline-secondary">delete</button></td>
+              class="btn btn-sm btn-outline-secondary">delete</button></td> -->
         </tr>
         <tr>
           <td>8</td>
@@ -276,9 +299,11 @@
           <td>5/4</td>
           <td>010-4321-9876</td>
           <td>손양원</td>
+           <td><button type="button" class="button view" onclick="location.href='https://22200310web2.netlify.app/view.html' ">더보기</button></td>
+          <!--
           <td>leelang54@handong.ac.kr</td>
           <td><button type="button" class="btn btn-sm btn-outline-secondary">edit</button><button type="button"
-              class="btn btn-sm btn-outline-secondary">delete</button></td>
+              class="btn btn-sm btn-outline-secondary">delete</button></td> -->
         </tr>
         <tr>
           <td>9</td>
@@ -286,9 +311,10 @@
           <td>2/23</td>
           <td>010-5678-9876</td>
           <td>카마이클</td>
-          <td>hunhun23@handong.ac.kr</td>
+           <td><button type="button" class="button view" onclick="location.href='https://22200310web2.netlify.app/view.html' ">더보기</button></td>
+          <!-- <td>hunhun23@handong.ac.kr</td>
           <td><button type="button" class="btn btn-sm btn-outline-secondary">edit</button><button type="button"
-              class="btn btn-sm btn-outline-secondary">delete</button></td>
+              class="btn btn-sm btn-outline-secondary">delete</button></td> -->
         </tr>
         <tr>
           <td>10</td>
@@ -296,9 +322,10 @@
           <td>11/3</td>
           <td>010-0000-1234</td>
           <td>열송학사</td>
-          <td>zoozero113@handong.ac.kr</td>
+           <td><button type="button" class="button view" onclick="location.href='https://22200310web2.netlify.app/view.html' ">더보기</button></td>
+          <!-- <td>zoozero113@handong.ac.kr</td>
           <td><button type="button" class="btn btn-sm btn-outline-secondary">edit</button><button type="button"
-              class="btn btn-sm btn-outline-secondary">delete</button></td>
+              class="btn btn-sm btn-outline-secondary">delete</button></td> -->
         </tr>
 
       </tbody>

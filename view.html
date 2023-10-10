@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<main>
+  <style>
+    .snackbar {
+      display: block;
+      background: yellowgreen;
+      border-radius: 1px;
+      height: 50px;
+      border-bottom: solid 2px gray;
+
+    }
+
+    table {
+      display: block;
+      width: auto;
+      text-align: center;
+      font-weight: 5px;
+      background-color: rgba(255, 255, 255, 0.829);
+    }
+
+    h3.h2 {
+      text-align: left;
+      margin-left: 10px;
+      font-weight: 2pt;
+      color: white;
+      float: left;
+
+    }
+
+    .topnav {
+      overflow: hidden;
+      display: block;
+      border-radius: 0px;
+      background-color: #333;
+    }
+
+    /* Style the topnav links */
+    .topnav a {
+      float: right;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 18px;
+      text-decoration: none;
+    }
+
+    .topnav h3 {
+      color: white;
+      display: block;
+      border-top: solid 2px white;
+      border-bottom: solid 2px white;
+      padding: 5px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+
+
+    a:link,
+    a:visited {
+      color: white;
+      padding: 25px;
+      text-align: center;
+      text-decoration: none;
+
+    }
+
+    a:hover,
+    a:active {
+      background-color: green;
+    }
+
+
+    .addbuttonhead {
+      margin: auto;
+      width: 688px;
+      height: 50px;
+      background: white;
+      border-radius: 0px;
+      margin-top: 10px;
+      border-bottom: solid 2px green;
+      border-top: solid 2px green;
+    }
+
+    .list {
+
+      color: black;
+      margin: auto;
+      text-align: center;
+      font-size: 30px;
+      background: white;
+      width: 60px;
+
+    }
+
+
+    button {
+      background: yellowgreen;
+      font-weight: 10px;
+      color: white;
+      border-radius: 3px;
+    }
+
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 5px;
+    }
+
+    .div1 {
+      border-radius: 0px;
+      background: white;
+      background-color: white;
+      border-bottom: solid 1px lightgray;
+    }
+
+
+
+    .heading {
+      background-color: white;
+    }
+
+    table {
+      display: block;
+      margin: auto;
+      width: 695px;
+      border-radius: 3px;
+      background-color: white;
+
+    }
+
+    th,
+    tr {
+      margin: auto;
+      width: auto;
+      border: double 2px green;
+      font-weight: 1px;
+      border-radius: 3px;
+
+    }
+
+    td {
+      padding: 10px;
+      width: auto;
+
+      border-bottom: solid 1px green;
+      border-top: solid 1px green;
+    }
+  </style>
+  <div class="snackbar"></div>
+  <div class="div1">
+
+    <div class="topnav">
+      <h3 class="h2">나의 친구 관리 리스트</h3>
+      <a href="#">Home</a>
+      <a href="#">How to use</a>
+      <a href="#">About</a>
+    </div>
+
+  </div>
+
+  <div class="addbuttonhead">
+    <h8 class="list">리스트 세부내용</h8>
+  </div>
+
+  <div class="heading">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">이름</th>
+          <th scope="col">생일</th>
+          <th scope="col">전화번호</th>
+          <th scope="col">RC</th>
+          <th scope="col">이메일</th>
+          <th scope="col">Menu</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>김철수</td>
+          <td>12/31</td>
+          <td>010-1234-1234</td>
+          <td>토레이</td>
+          <td>Cheol1231@handong.ac.kr</td>
+          <td><button type="button" class="btn btn-sm btn-outline-secondary">edit</button><button type="button"
+              class="btn btn-sm btn-outline-secondary">delete</button></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>김예빈</td>
+          <td>8/5</td>
+          <td>010-1111-2222</td>
+          <td>손양원</td>
+          <td>yebinkim85@handong.ac.kr</td>
+          <td><button type="button" class="btn btn-sm btn-outline-secondary">edit</button><button type="button"
+              class="btn btn-sm btn-outline-secondary">delete</button></td>
+
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>이유리</td>
+          <td>11/5</td>
+          <td>010-1212-3434</td>
+          <td>장기려</td>
+          <td>115glass@handong.ac.kr</td>
+          <td><button type="button" class="btn btn-sm btn-outline-secondary">edit</button><button type="button"
+              class="btn btn-sm btn-outline-secondary">delete</button></td>
+
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>이한나</td>
+          <td>3/12</td>
+          <td>010-1231-4567</td>
+          <td>장기려</td>
+          <td>hannah123@handong.ac.kr</td>
+          <td><button type="button" class="btn btn-sm btn-outline-secondary">edit</button><button type="button"
+              class="btn btn-sm btn-outline-secondary">delete</button></td>
+
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>박레아</td>
+          <td>6/28</td>
+          <td>010-5678-1234</td>
+          <td>카마이클</td>
+          <td>leah628@handong.ac.kr</td>
+          <td><button type="button" class="btn btn-sm btn-outline-secondary">edit</button><button type="button"
+              class="btn btn-sm btn-outline-secondary">delete</button></td>
+
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>김현</td>
+          <td>8/19</td>
+          <td>010-1111-9999</td>
+          <td>열송학사</td>
+          <td>hyunKim1111@handong.ac.kr</td>
+          <td><button type="button" class="btn btn-sm btn-outline-secondary">edit</button><button type="button"
+              class="btn btn-sm btn-outline-secondary">delete</button></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>김지아</td>
+          <td>7/9</td>
+          <td>010-2222-3333</td>
+          <td>손양원</td>
+          <td>Gia7979@handong.ac.kr</td>
+          <td><button type="button" class="btn btn-sm btn-outline-secondary">edit</button><button type="button"
+              class="btn btn-sm btn-outline-secondary">delete</button></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>한이랑</td>
+          <td>5/4</td>
+          <td>010-4321-9876</td>
+          <td>손양원</td>
+          <td>leelang54@handong.ac.kr</td>
+          <td><button type="button" class="btn btn-sm btn-outline-secondary">edit</button><button type="button"
+              class="btn btn-sm btn-outline-secondary">delete</button></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>최훈</td>
+          <td>2/23</td>
+          <td>010-5678-9876</td>
+          <td>카마이클</td>
+          <td>hunhun23@handong.ac.kr</td>
+          <td><button type="button" class="btn btn-sm btn-outline-secondary">edit</button><button type="button"
+              class="btn btn-sm btn-outline-secondary">delete</button></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>서주영</td>
+          <td>11/3</td>
+          <td>010-0000-1234</td>
+          <td>열송학사</td>
+          <td>zoozero113@handong.ac.kr</td>
+          <td><button type="button" class="btn btn-sm btn-outline-secondary">edit</button><button type="button"
+              class="btn btn-sm btn-outline-secondary">delete</button></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</main>
+
+</html>
