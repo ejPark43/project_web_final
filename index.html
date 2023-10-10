@@ -81,26 +81,33 @@
     }
 
     .list {
-
+	float: left;
       color: black;
 
       margin: auto;
+      padding: 5px;
       font-size: 30px;
       background: white;
-      width: 60px;
+      border-top: solid 2px gray;
+      border-bottom: solid 2px gray;
+      width: 200px;
 
     }
 
     .add {
+    float:right;
+     margin: auto;
       background:  yellowgreen;
       color: white;
       border-radius: 10px;
 	width: 60px;
     height: 40px;
-      margin-left: 550px;
+    
       border-bottom: solid 2px gray;
     }
-
+	.add:hover{
+ background: rgb(138, 182, 49);;
+    }
     button {
       background: yellowgreen;
       font-weight: 10px;
@@ -185,7 +192,7 @@ color: black;
   </div>
 
   <div class="addbuttonhead">
-    <h8 class="list">목록</h8>
+    <h8 class="list">전체 리스트</h8>
   
 <button type="button" class="button add" onclick="location.href='https://22200310web2.netlify.app/add.html' ">Add</button>
   </div>
