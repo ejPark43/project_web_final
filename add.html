@@ -33,13 +33,18 @@
   <input type="radio" id="clubfriend" name="relationship" value="clubFriend">
   <label for="clubfriend">동아리</label>
   <input type="radio" id="etc" name="relationship" value="Etc">
-  <label for="etc">기타</label>
+  <label for="javascript">기타</label>
 <br>
 비고:<br>
 <textarea name='content' cols=40 rows=5></textarea><br>
 
-<input type="submit" value="추가"><input type="reset" value="새로입력">
+<button onclick="myFunction()">추가</button>
 
+<script>
+function myFunction() {
+  alert("게시물이 추가됩니다.");
+}
+</script>
 
 </form> 
 </body>
