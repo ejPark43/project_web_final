@@ -4,7 +4,7 @@
  
 <h2>데이터 수정</h2>
 
-<form name = "edithtml" form action="action_page.html" onsubmit="return validateForm()" method="post">
+<form name = "edithtml" onsubmit="return validateForm()" method="post">
   <label for="fname"><span>*</span>이름: </label><br>
   <input type="text" id="fname" name="uname" placeholder="이름 입력"><br>
   <label for="text"><span>*</span>생일: </label><br>
@@ -52,33 +52,36 @@
       if(uname.value==""){
         alert("이름을 입력하세요");
         uname.focus();
+
         return false;
-      }
+      } 
+
       if(uname.value.length<2){
         alert("이름은 2글자 이상 입력하세요");
         uname.focus();
+
         return false;
       }
         var birthday = document.edithtml.birthday;
       if(birthday.value == ""){ // 생일 안썼을 때 
         alert("생일을 입력하세요");
         birthday.focus();
+
         return false;
       }
 
     }
     
- 
+
 
 function confirmCall(){
-if(!validateForm()) return false;
+
     if(confirm("게시물을 수정할까요?")){
-    alert("수정되었습니다.");
-    }else {
-    alert("취소되었습니다.");
-    }
+    }else {alert("취소되었습니다."); return false;}
     
     }
+    
+    
 
 </script>
 
